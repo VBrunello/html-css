@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando shorthands</title>
+    <style>
+        h1{
+            /* Sempre respeitando: width > style > color */
+            border: 10px solid red;
+            outline: 30px solid blue;
+
+            /* Sempre respeitando: top > right > bottom > left */
+            /* Se os valores de top e bottom (ou right e left) forem iguais, você pode colocar os dois juntos:
+            padding: 10px 20px;
+            margin: 0px 15px;
+            */
+            padding: 10px 15px 20px 25px;
+            margin: 0px 10px 20px 30px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Isso é uma caixa</h1>
+</body>
+</html>

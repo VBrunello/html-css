@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras nas caixas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+        }
+        article#caixa{
+            background: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+
+            /* Os quatro valores da box-shadow são:
+            h-offset,
+            v-offset,
+            blur,
+            color
+            */
+            box-shadow: 3px 5px 4px black;
+
+            /* Para arredondar os vértices */
+            border-radius: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <article id="caixa">
+        <h1>Usando sombras</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere hic enim in eius illum cum explicabo, quam labore aut, eveniet quidem doloribus nam omnis ipsum quibusdam numquam ut deleniti et.</p>
+    </article>
+</body>
+</html>

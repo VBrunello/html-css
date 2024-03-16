@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Vamos ver se a imagem funciona</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="paisagem-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="paisagem-700.jpg" type="image/jpg">
+        <img src="paisagem-1000.jpg" alt="Uma paisagem bonita">
+    </picture>
+
+    <h1>E o áudio?</h1>
+    <audio preload="metadata" controls autoplay muted loop>
+        <source src="guanacast-33.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta áudio <a href="guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+    </audio>
+
+    <h1>Bora de vídeo?</h1>
+    <video src="happy-mistake.mp3" width="600px" poster="thumb.jpg" controls autoplay>
+        <source src="happy-mistake.mp3" type="video/mpeg">
+        <p>Infelizmente não deu pra carregar o vídeo</p>
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/d2FqIsJRqBw?si=Nym1kKAALnPIraK9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
