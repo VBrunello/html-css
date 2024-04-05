@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor01: #9B1DB1;
+    --cor02: #792D86;
+    --cor03: #B900DB;
+    --cor04: #552E5C;
+    --cor05: #302233;
+
+    --fonte01: 'Bebas Neue', sans-serif;
+    --fonte02: 'Noto Sans', sans-serif;
+}
+
+body{
+    background-color: var(--cor05);
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+}
+
+section{
+    background-color: white;
+    padding: 25px 15px 25px 15px;
+    text-align: justify;
+    font-family: var(--fonte02);
+}
+
+section > h1{
+    background-color: rgba(0, 0, 0, 0.212);
+    display: inline-block;
+}
+
+section.imagem{
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+    font-family: var(--fonte01);
+    font-size: 2em;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url(../imagens/capanovapadrimnova.jpg);
+    background-position: center center;
+    border-radius: 5px 5px 0px 0px;
+}
+
+section#img02{
+    background-image: url(../imagens/1000x1000.jpg);
+    background-position: center center;
+}
+
+section#img03{
+    background-image: url(../imagens/PADRIM_HEADER_2022.jpg);
+    background-position: center center;
+}
+
+section#radius{
+    border-radius: 0px 0px 5px 5px;
+}
+
+section.normal{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+
+header{
+    font-family: var(--fonte01);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px black;
+    background-image: linear-gradient(var(--cor02), var(--cor05));
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+footer{
+    background-image: linear-gradient(var(--cor05), var(--cor02));
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer > p{
+    font-family: var(--fonte02);
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
